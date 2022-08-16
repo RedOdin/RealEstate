@@ -1,0 +1,23 @@
+.gallery-container {
+  display: flex;
+  justify-content: center;
+
+  .gallery-white-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+    .gallery-section:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    .gallery-section {
+      display: flex;
+      flex-direction: column;
+
+      img:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+}

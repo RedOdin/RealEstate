@@ -1,0 +1,21 @@
+<div class="layout-container">
+  <div class="section-1">
+    <ng-container *ngTemplateOutlet="sectionTitle; context: {sectionNumber: '01', sectionTitle: 'ABOUT'}"></ng-container>
+  </div>
+  <div class="section-2">
+    <ng-container *ngTemplateOutlet="sectionTitle; context: {sectionNumber: '02', sectionTitle: 'VIDEO'}"></ng-container>
+  </div>
+  <div class="section-3">
+    <ng-container *ngTemplateOutlet="sectionTitle; context: {sectionNumber: '03', sectionTitle: 'GALLERY'}"></ng-container>
+  </div>
+  <div class="section-4">
+    <ng-container *ngTemplateOutlet="sectionTitle; context: {sectionNumber: '04', sectionTitle: 'INVEST'}"></ng-container>
+  </div>
+</div>
+
+<ng-template #sectionTitle let-sectionNumber="sectionNumber" let-sectionTitle="sectionTitle">
+  <div class="info-container">
+    <div class="section-number">{{sectionNumber}}</div>
+    <div class="section-title">{{sectionTitle}}</div>
+  </div>
+</ng-template>
