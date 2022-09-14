@@ -6,6 +6,8 @@ import { InvestComponent } from './components/invest/invest.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { InfoLayoutComponent } from './components/info-layout/info-layout.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { InfoLayoutComponent } from './components/info-layout/info-layout.compon
     InvestComponent,
     LayoutComponent,
     GalleryComponent,
-    InfoLayoutComponent
+    InfoLayoutComponent,
+    NavbarComponent,
+    BottomNavbarComponent
   ],
   imports: [
     BrowserModule
