@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { InvestComponent } from './components/invest/invest.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { InfoLayoutComponent } from './components/info-layout/info-layout.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
+import { InvestComponent } from './components/home/invest/invest.component';
+import { LayoutComponent } from './components/home/layout/layout.component';
+import { GalleryComponent } from './components/home/gallery/gallery.component';
+import { InfoLayoutComponent } from './components/home/info-layout/info-layout.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { BottomNavbarComponent } from './components/home/bottom-navbar/bottom-navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.
     GalleryComponent,
     InfoLayoutComponent,
     NavbarComponent,
-    BottomNavbarComponent
+    BottomNavbarComponent,
+    HomeComponent,
+    DetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
